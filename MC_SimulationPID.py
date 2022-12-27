@@ -1,3 +1,7 @@
+# ANIL EFE COBAN
+# BERKAY YILMAZ
+# 27.12.2022
+
 import numpy as np
 import matplotlib.pyplot as plt
 

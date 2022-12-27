@@ -10,7 +10,7 @@ def transfer_function(P, t):
     I = Kp * (2 - P) + Ki * np.trapz(2 - P, t) + Kd * np.gradient(P, t) + Kt * (-0.45) * np.heaviside(2 - P, 1)
     return I
 
-# Monte Carlo yöntemi ile 1000 adet rastgele P(t) değeri üret
+# Monte Carlo yöntemi ile 600 adet rastgele P(t) değeri üret
 np.random.seed(0)
 P = np.random.uniform(0, 12, size=600)
 t = np.arange(600)
